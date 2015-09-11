@@ -1,4 +1,4 @@
-package com.kk.portal.client.app.ui.support;
+package com.kk.portal.client.app.ui;
 
 import com.google.gwt.user.client.Timer;
 import com.google.inject.Inject;

@@ -12,7 +12,6 @@ import com.kk.portal.client.app.ui.event.app.LoginSuccessEvent;
 import com.kk.portal.client.app.ui.event.app.LoginSuccessEvent.LoginSuccessEventHandler;
 import com.kk.portal.client.app.ui.event.app.LogoutEvent.LogoutEventHandler;
 import com.kk.portal.client.app.ui.event.app.LogoutResetEvent.LogoutResetEventHandler;
-import com.kk.portal.client.app.ui.support.AutoLogoutScheduler;
 import com.kk.portal.client.app.ui.wireframe.FrameViewFactory;
 import com.kk.portal.client.app.ui.wireframe.login.LoginView;
 import com.kk.portal.client.app.ui.wireframe.stage.StageView;

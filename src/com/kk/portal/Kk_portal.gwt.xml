@@ -6,6 +6,7 @@
 	<inherits name='com.google.gwt.user.User'/>
 	<inherits name="com.google.gwt.inject.Inject"/>
 	<inherits name="com.google.gwt.logging.Logging"/>
+	<inherits name="com.google.gwt.i18n.I18N"/>
 
 	<!-- Other module inherits -->
 	<inherits name="com.github.gwtbootstrap.Bootstrap"/>
@@ -16,7 +17,7 @@
 	<entry-point class='com.kk.portal.client.ROOT'/>
 
 	<!-- Specify supported locale. -->
-	<extend-property name="locale" values="ua"/>
+	<extend-property name="locale" values="uk"/>
 
 	<!-- Specify the paths for translatable code -->
 	<source path='client'/>
