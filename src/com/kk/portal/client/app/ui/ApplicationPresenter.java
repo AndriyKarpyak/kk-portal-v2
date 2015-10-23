@@ -17,7 +17,7 @@ public abstract class ApplicationPresenter<T extends ApplicationView & IsWidget,
 	protected void initEventSubscriptions() {
 	}
 
-	public void init() {
+	protected void init() {
 
 		view.setPresenter(this);
 		view.initLayout();

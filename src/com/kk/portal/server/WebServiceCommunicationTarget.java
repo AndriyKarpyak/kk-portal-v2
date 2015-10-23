@@ -14,6 +14,7 @@ import com.kk.portal.shared.domain.comm.req.LoginReq;
 import com.kk.portal.shared.domain.comm.resp.LoginResp;
 import com.kk.portal.shared.domain.comm.resp.LoginRespErr;
 import com.kk.portal.shared.domain.comm.resp.UIStateResp;
+import com.kk.portal.shared.domain.model.StationHighResData;
 import com.kk.portal.shared.domain.state.CardTableState;
 import com.kk.portal.shared.domain.state.TabBarState;
 
@@ -48,9 +49,9 @@ public class WebServiceCommunicationTarget {
 		TabBarState state = new TabBarState();
 
 		List<String> tabsNames = new ArrayList<String>();
-		tabsNames.add("Tab One");
-		tabsNames.add("Tab Two");
-		tabsNames.add("Tab Three");
+		tabsNames.add("Empty tab");
+		tabsNames.add("Drag and drop");
+		tabsNames.add("Graph excample");
 
 		state.setTabs(tabsNames);
 
@@ -72,5 +73,17 @@ public class WebServiceCommunicationTarget {
 		resp.setState(state);
 
 		return resp;
+	}
+
+	@GET
+	@Path("/GetHighResData")
+	public StationHighResData getHighResData() {
+		
+		System.out.println("Requesting High res data!!!");
+		
+		ParkServerRestClient client = new ParkServerRestClient();
+		List<StationHighResData> list = client.get();
+
+		return list.get(0);
 	}
 }

@@ -15,7 +15,6 @@ public class DecksHolderPresenter extends FramePresenter<DecksHolderView, DecksH
 
 	@Override
 	protected void initEventSubscriptions() {
-		
 		wsBus.addTabBarStateReceivedHandler(this);
 	}
 

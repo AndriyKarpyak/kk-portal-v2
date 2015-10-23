@@ -9,6 +9,7 @@ import org.fusesource.restygwt.client.MethodCallback;
 import org.fusesource.restygwt.client.RestService;
 
 import com.google.inject.Singleton;
+import com.kk.portal.shared.domain.comm.model.StationHighResDataResp;
 import com.kk.portal.shared.domain.comm.req.LoginReq;
 import com.kk.portal.shared.domain.comm.resp.LoginResp;
 import com.kk.portal.shared.domain.comm.resp.UIStateResp;
@@ -30,4 +31,8 @@ public interface WebServiceCommunicationInterface extends RestService {
 	@GET
 	@Path("/GetCardTableState/{table}")
 	public void getCardTableState(@PathParam("table") Integer deckIndex, MethodCallback<UIStateResp<CardTableState>> callback);
+	
+	@GET
+	@Path("/GetHighResData")
+	public void getHighResData(MethodCallback<StationHighResDataResp> callback);
 }
